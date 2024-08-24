@@ -1,0 +1,13 @@
+.app{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.main-content{
+    flex: 1;
+    width: 100vw;
+    display: flex;
+    background: linear-gradient(to right, rgb(0, 0, 48) 0% , rgb(9, 9, 71) 25% , rgb(14, 14, 59) 50% , rgb(37, 37, 66) 75% , rgb(56, 56, 71));
+}

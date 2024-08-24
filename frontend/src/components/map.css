@@ -1,0 +1,7 @@
+.map-section{
+    width: 750px;
+    height: 900px;
+    background-color: black;
+    border-radius: 0 25px 25px 0;
+    overflow: hidden;
+}

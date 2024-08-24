@@ -1,0 +1,51 @@
+.prediction{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.safeareas{
+    width: 80%;
+    height: 340px;
+    background-color: beige;
+    margin-bottom: 1.8rem ;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    overflow: hidden;
+}
+
+.heading{
+    padding: 4.5px 0px;
+    background: rgb(16, 16, 161);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    height: 40px;
+    font-size: 1.8rem;
+}
+
+.alert-notifcation{    
+    width: 80%;
+    height: 240px;
+    background-color: beige;
+    border-radius: 20px;
+    margin-bottom: 1.8rem ;
+    outline: none;
+    border: none;
+    overflow: hidden;
+}
+
+.Emergency{    
+    width: 80%;
+    height: 240px;
+    background-color: beige;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    overflow: hidden;
+}

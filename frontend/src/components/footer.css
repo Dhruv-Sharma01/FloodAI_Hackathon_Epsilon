@@ -1,0 +1,38 @@
+.footer-section{
+    width: 100%;
+    height: 180px;
+    background-color: rgb(5, 3, 56);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo{
+    height: 180px;
+    width: 30%;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sub{
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+}
+
+.verline{
+    margin-top: 15px;
+    width: 1px;
+    background-color: white;
+    height: 150px;
+}
+
+.emergencies{
+    text-align: center;
+}
+
+.risk{
+    text-align: center;
+}
