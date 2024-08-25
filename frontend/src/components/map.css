@@ -5,3 +5,19 @@
     border-radius: 0 25px 25px 0;
     overflow: hidden;
 }
+
+.headTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cross{
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.message{
+    margin: 20px 15px;
+    font-size: 1.2rem;
+}

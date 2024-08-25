@@ -1,6 +1,6 @@
 .footer-section{
     width: 100%;
-    height: 180px;
+    height: 280px;
     background-color: rgb(5, 3, 56);
     color: white;
     display: flex;
@@ -8,11 +8,14 @@
 }
 
 .logo{
-    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 280px;
     width: 30%;
     font-size: 2.2rem;
     font-weight: bold;
-    text-align: center;
 }
 
 .sub{
@@ -26,7 +29,7 @@
     margin-top: 15px;
     width: 1px;
     background-color: white;
-    height: 150px;
+    height: 250px;
 }
 
 .emergencies{
@@ -35,4 +38,14 @@
 
 .risk{
     text-align: center;
+}
+
+.headnum{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+
+.number{
+    list-style: none;
+    margin-bottom: 1.2rem;
 }

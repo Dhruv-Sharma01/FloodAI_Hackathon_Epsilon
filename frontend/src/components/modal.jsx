@@ -4,16 +4,40 @@ import Modal from 'react-modal';
 // Set the app element for accessibility (this is important)
 Modal.setAppElement('#root');
 
-const MModal = ({Severity = "Normal"}) => {
+const MModal = ({ Severity = "Risk" }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => setModalIsOpen(true);
   const closeModal = () => setModalIsOpen(false);
 
+  // Set the color based on severity
+  const getBackgroundColor = () => {
+    switch (Severity) {
+      case "Risk":
+        return 'red';
+      case "Moderate":
+        return 'orange';
+      case "Normal":
+      default:
+        return 'green';
+    }
+  };
+
+    // Set the message based on severity
+    const getMessage = () => {
+      switch (Severity) {
+        case "Risk":
+          return 'Evacuate to safe areas as quickly as possible.';
+        case "Moderate":
+          return 'Your area is probable to be flooded, take the necessary precautions.';
+        case "Normal":
+        default:
+          return 'You are in a safe zone.';
+      }
+    };
+
   return (
-    // open this when there is severe flood in your area
     <div>
-        <button type="button" onClick={openModal}>Open</button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -29,16 +53,18 @@ const MModal = ({Severity = "Normal"}) => {
             width: '400px',
             height: '200px',
             padding: '20px',
-            backgroundColor: 'red',
+            backgroundColor: getBackgroundColor(),
             borderRadius: '15px',
             color: 'white',
             textAlign: 'center'
           },
         }}
       >
-        <h2 style={{ fontWeight: 'bold'}}>Severity: {Severity}</h2>
-        <p>Content goes here...</p>
-        <button onClick={closeModal}>Close Modal</button>
+        <div className="headTitle">
+          <h2 className='modtitle'>Severity: {Severity}</h2>
+          <span className='cross' onClick={closeModal}> &#10005; </span>
+        </div>
+        <p className='message'>{getMessage()}</p>
       </Modal>
     </div>
   );
