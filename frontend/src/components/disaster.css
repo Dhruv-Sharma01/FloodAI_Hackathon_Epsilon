@@ -1,0 +1,53 @@
+
+/* DisasterContactModal.css */
+.modal {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal h2 {
+    margin-top: 0;
+  }
+  
+  .modal ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .modal li {
+    margin-bottom: 10px;
+  }
+  
+  .modal button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .modal button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -49,3 +49,36 @@
     border: none;
     overflow: hidden;
 }
+
+.guidelines {
+    overflow: hidden;
+    height: 200px; /* Set the height as per your design */
+    position: relative;
+    font-weight: 600;
+    font-size: large;
+  }
+  
+  .guidelines ul {
+    margin: 0 20px;
+    padding: 0;
+  list-style-type: disc;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  animation: scroll 30s linear infinite;
+  }
+  
+
+  @keyframes scroll {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .guidelines li {
+    padding: 10px 0; /* Adjust padding as needed */
+    font-size: 1em;
+  }
