@@ -68,5 +68,5 @@ cd frontend
 yarn run dev --host
 ```
 ## Demo
-<img src="https://imgur.com/i4aoKu2.gif">
+<img src="https://imgur.com/i4aoKu2.gif" alt="demo">
 
